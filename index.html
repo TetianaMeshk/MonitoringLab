@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Платформа моніторингу здоров'я</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,6 +32,7 @@
                     <img src="workout1.jpg" alt="Тренування 1">
                     <h3>Кардіо</h3>
                     <p>Ефективне кардіо для покращення витривалості.</p>
+                    <p><strong>Тривалість:</strong> 13 хв</p>
                     <p><strong>Калорії:</strong> 300 ккал</p>
                     <p><a href="https://www.youtube.com/watch?v=gHav--Sjhbk" target="_blank">
                         <button class="execute-btn">Переглянути тренування</button>
@@ -42,6 +43,7 @@
                     <img src="workout2.jpg" alt="Тренування 2">
                     <h3>Силові вправи</h3>
                     <p>Зміцнення м'язів та покращення фізичної форми.</p>
+                    <p><strong>Тривалість:</strong> 34 хв</p>
                     <p><strong>Калорії:</strong> 400 ккал</p>
                     <p><a href="https://www.youtube.com/watch?v=imKGm85nie4" target="_blank">
                         <button class="execute-btn">Переглянути тренування</button>
@@ -50,31 +52,34 @@
                     <button class="execute-btn">Виконати</button>
                 </article>
                 <article class="training-card">
-                    <img src="logo2.png" alt="Тренування 3">
-                    <h3>Йога</h3>
-                    <p>Заспокійливі вправи для підтримки тонусу шкіри.</p>
-                    <p><strong>Калорії:</strong> 220 ккал</p>
-                    <p><a href="https://www.youtube.com/watch?v=gHav--Sjhbk" target="_blank">
+                    <img src="workout5.jpg" alt="Тренування 3">
+                    <h3>Пілатес</h3>
+                    <p>комплекс фізичних вправ для розвитку гнучкості всіх м'язів тіла.</p>
+                    <p><strong>Тривалість:</strong> 54 хв</p>
+                    <p><strong>Калорії:</strong> 500 ккал</p>
+                    <p><a href="https://www.youtube.com/watch?v=N1nqm6xsPmU" target="_blank">
                         <button class="execute-btn">Переглянути тренування</button>
                     </a></p>
                     <button class="execute-btn">Виконати</button>
                 </article>
                 <article class="training-card">
-                    <img src="workout3.jpg" alt="Тренування 3">
+                    <img src="workout3.jpg" alt="Тренування 4">
                     <h3>Йога</h3>
                     <p>Заспокійливі вправи для підтримки тонусу шкіри.</p>
-                    <p><strong>Калорії:</strong> 220 ккал</p>
-                    <p><a href="https://www.youtube.com/watch?v=gHav--Sjhbk" target="_blank">
+                    <p><strong>Тривалість:</strong> 25 хв</p>
+                    <p><strong>Калорії:</strong> 285 ккал</p>
+                    <p><a href="https://www.youtube.com/watch?v=5zV7TikZiEw" target="_blank">
                         <button class="execute-btn">Переглянути тренування</button>
                     </a></p>
                     <button class="execute-btn">Виконати</button>
                 </article>
                 <article class="training-card">
-                    <img src="workout4.jpg" alt="Тренування 3">
-                    <h3>Йога</h3>
-                    <p>Заспокійливі вправи для підтримки тонусу шкіри.</p>
-                    <p><strong>Калорії:</strong> 220 ккал</p>
-                    <p><a href="https://www.youtube.com/watch?v=gHav--Sjhbk" target="_blank">
+                    <img src="workout4.jpg" alt="Тренування 5">
+                    <h3>Розтяжка</h3>
+                    <p>Система вправ, спрямована на розвиток гнучкості всіх м'язів, суглобів та сухожиль.</p>
+                    <p><strong>Тривалість:</strong> 32 хв</p>
+                    <p><strong>Калорії:</strong> 310 ккал</p>
+                    <p><a href="https://www.youtube.com/watch?v=giEB7NmJD_Q" target="_blank">
                         <button class="execute-btn">Переглянути тренування</button>
                     </a></p>
                     <button class="execute-btn">Виконати</button>
@@ -83,9 +88,10 @@
         </section>
         
         <section id="progress">
+            <br>
             <h2>Мій прогрес</h2>
             <div class="time-range">
-                <label for="time-range">Виберіть часовий проміжок:</label>
+                <label for="time-range"><strong>Виберіть часовий проміжок:</strong></label>
                 <select id="time-range" name="time-range">
                     <option value="day">День</option>
                     <option value="week">Тиждень</option>
@@ -122,6 +128,7 @@
         </section>
         
         <section id="nutrition">
+            <br>
             <h2>Раціон</h2>
             <form>
                 <label for="meal-time">Прийом їжі:</label>
