@@ -3,8 +3,11 @@ body {
     font-family: 'Oswald', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
-    color: #333;
+    background-image: url('back.jpg'); /* Замініть 'background.jpg' на вашу картинку */
+    background-size: cover; /* Масштабує зображення, щоб воно покривало весь екран */
+    background-position: center; /* Центрує фон */
+    background-attachment: fixed; /* Фіксує фон при прокручуванні */
+    color: #333; /* Колір тексту */
 }
 
 /* Заголовок */
@@ -134,7 +137,7 @@ footer {
     background-color: #fafafa;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 60%;
+    max-width: 80%;
 }
 
 
@@ -169,7 +172,7 @@ footer {
     #progress, 
     #nutrition {
         padding: 20px; /* Менші відступи всередині */
-        width: 80%; /* Займатимуть більшу частину екрану */
+        width: 90%; /* Займатимуть більшу частину екрану */
     }
 }
 
@@ -187,6 +190,6 @@ footer {
     #progress, 
     #nutrition {
         padding: 20px; /* Менші відступи всередині */
-        width: 80%; /* Займатимуть більшу частину екрану */
+        width: 90%; /* Займатимуть більшу частину екрану */
     }
 }
