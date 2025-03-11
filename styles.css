@@ -17,9 +17,9 @@ header {
 /* Контейнер заголовка */
 .header-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column; /* Використовуємо вертикальне розташування елементів */
+    align-items: left; /* Центруємо елементи по горизонталі */
+    gap: 10px; /* Відстань між елементами */
 }
 
 /* Лого + заголовок */
@@ -86,7 +86,8 @@ main {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: left; /* Вирівнюємо весь текст по лівому краю */
+    line-height: 1.2; /* Зменшуємо міжрядковий інтервал */
 }
 
 .training-card img {
@@ -123,12 +124,12 @@ footer {
 @media screen and (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
     }
 
     .nav-links {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         gap: 10px;
     }
     
@@ -138,7 +139,7 @@ footer {
     
     .nav-links li a {
         display: block;
-        text-align: center;
+        text-align: left;
         padding: 10px;
         width: 100%;
     }
@@ -151,7 +152,7 @@ footer {
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 18px;
-        text-align: center;
+        text-align: left;
     }
 
     .logo {
