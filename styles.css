@@ -127,6 +127,17 @@ footer {
     margin-top: 20px;
 }
 
+#progress, 
+#nutrition {
+    padding: 90px; /* Менші відступи */
+    margin: 20px auto; /* Центрування та зменшення відступів */
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 60%;
+}
+
+
 /* Адаптивність */
 @media screen and (max-width: 768px) {
     .header-container {
@@ -154,6 +165,12 @@ footer {
     .grid-container {
         grid-template-columns: 1fr;
     }
+
+    #progress, 
+    #nutrition {
+        padding: 20px; /* Менші відступи всередині */
+        width: 80%; /* Займатимуть більшу частину екрану */
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -165,5 +182,11 @@ footer {
     .logo {
         width: 50px;
         height: 50px;
+    }
+
+    #progress, 
+    #nutrition {
+        padding: 20px; /* Менші відступи всередині */
+        width: 80%; /* Займатимуть більшу частину екрану */
     }
 }
