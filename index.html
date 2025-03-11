@@ -95,12 +95,20 @@
         
         <section id="progress">
             <h2>Мій прогрес</h2>
-            <p><strong>Кількість тренувань на тиждень:</strong> 2</p>
+            <div class="time-range">
+                <label for="time-range">Виберіть часовий проміжок:</label>
+                <select id="time-range" name="time-range">
+                    <option value="day">День</option>
+                    <option value="week">Тиждень</option>
+                    <option value="month">Місяць</option>
+                    <option value="year">Рік</option>
+                </select>
+            </div>
+            <p><strong>Кількість тренувань:</strong> 2</p>
             <ul>
                 <li>10.03.2025 - Кардіо</li>
                 <li>11.03.2025 - Силові вправи</li>
             </ul>
-            <p><strong>Активність:</strong> Висока</p>
             <h3>Список виконаних тренувань:</h3>
             <table>
                 <tr>
@@ -119,6 +127,9 @@
                     <td>400</td>
                 </tr>
             </table>
+            <p><strong>Рівень активності:</strong> Середній</p>
+            <p><strong>Загальний час тренувань:</strong> 1 год</p>
+            <p><strong>Кількість спалених калорій:</strong> 700 ккал</p>
         </section>
         
         <section id="nutrition">
@@ -127,8 +138,11 @@
                 <label for="meal-time">Прийом їжі:</label>
                 <select id="meal-time" name="meal-time">
                     <option value="breakfast">Сніданок</option>
+                    <option value="snack">Перекус</option>
                     <option value="lunch">Обід</option>
+                    <option value="snack2">Другий перекус</option>
                     <option value="dinner">Вечеря</option>
+                    <option value="snack3">Третій перекус</option>
                 </select>
                 <label for="meal">Назва страви:</label>
                 <input type="text" id="meal" name="meal" required>
@@ -137,13 +151,13 @@
                 <button type="submit">Додати</button>
             </form>
             <ul id="meal-list">
-                <li>Сніданок: Вівсянка - 250 ккал</li>
-                <li>Обід: Курка з рисом - 500 ккал</li>
+                <li><strong>Сніданок:</strong> Вівсянка - 250 ккал</li>
+                <li><strong>Обід:</strong> Курка з рисом - 500 ккал</li>
             </ul>
         </section>
 
         <section id="hydration">
-            <h2>Лічильник води</h2>
+            <h2>Водний баланс</h2>
             <p><strong>Випито води за день:</strong> 1.5 л</p>
         </section>
     </main>
