@@ -1,10 +1,10 @@
 /* Основні стилі */
 body {
     font-family: 'Caveat', Arial, sans-serif;
-    margin: 0; /* Зовнішні відступи */
-    padding: 0; /* Внутрішні відступи */
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    color: #333; /* колір тексту в основній частині */
+    color: #333;
 }
 
 /* Заголовок */
@@ -16,9 +16,10 @@ header {
 
 /* Контейнер заголовка */
 .header-container {
-    display: flex; /* Вирівнювання елементів в ряд */
-    justify-content: space-between; /* Розташування елементів з обох боків */
-    align-items: center; /* Вирівнювання по вертикалі */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Лого + заголовок */
@@ -28,9 +29,9 @@ header {
 }
 
 .logo {
-    width: 60px;  /* Розмір логотипу */
+    width: 60px;
     height: 60px;
-    margin-right: 15px; /* Відступ між логотипом та текстом */
+    margin-right: 15px;
 }
 
 h1 {
@@ -40,9 +41,9 @@ h1 {
 
 /* Навігація */
 .nav-links {
-    list-style: none; /* Прибираємо маркери списку */
-    display: flex; 
-    gap: 20px; /* Відстань між пунктами меню */
+    list-style: none;
+    display: flex;
+    gap: 20px;
     margin: 0;
     padding: 0;
 }
@@ -51,16 +52,14 @@ h1 {
     display: inline;
 }
 
-/* Навігаційні лінки */
 .nav-links li a {
     color: white;
-    text-decoration: none; /* Прибираємо підкреслення посилань */
+    text-decoration: none;
     font-weight: bold;
     padding: 10px;
-    transition: 0.3s; /* Плавна зміна кольору */
+    transition: 0.3s;
 }
 
-/*колір при наведенні на навігаційні лінки*/
 .nav-links li a:hover {
     background-color: #34495e;
     border-radius: 5px;
@@ -77,12 +76,11 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 1800px; /* Обмежуємо ширину карток */
-    justify-items: start; /* Вирівнюємо елементи по лівому краю */
+    max-width: 1800px;
+    justify-items: center;
 }
 
-
-/*картки*/
+/* Картки */
 .training-card {
     background-color: white;
     padding: 15px;
@@ -93,10 +91,11 @@ main {
 
 .training-card img {
     max-width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
-/*кнопки "Виконати"*/
+/* Кнопки "Виконати" */
 .execute-btn {
     margin-top: 10px;
     padding: 10px 15px;
@@ -107,7 +106,6 @@ main {
     cursor: pointer;
 }
 
-/*колір наведення на кнопки "Виконати"*/
 .execute-btn:hover {
     background-color: #34495e;
 }
@@ -119,4 +117,45 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+}
+
+/* Адаптивність */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .nav-links li {
+        display: block;
+    }
+    
+    .nav-links li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
 }
